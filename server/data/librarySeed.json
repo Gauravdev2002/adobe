@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Right to Equality",
+        "articleNumber": "Article 14",
+        "section": "Fundamental Rights",
+        "content": "The State shall not deny to any person equality before the law or the equal protection of the laws within the territory.",
+        "tags": ["equality", "fundamental rights"]
+    },
+    {
+        "title": "Protection of Life and Personal Liberty",
+        "articleNumber": "Article 21",
+        "section": "Fundamental Rights",
+        "content": "No person shall be deprived of life or personal liberty except according to procedure established by law.",
+        "tags": ["liberty", "due process"]
+    },
+    {
+        "title": "Freedom of Speech and Expression",
+        "articleNumber": "Article 19(1)(a)",
+        "section": "Fundamental Rights",
+        "content": "All citizens shall have the right to freedom of speech and expression, subject to reasonable restrictions by law.",
+        "tags": ["speech", "expression"]
+    }
+]
