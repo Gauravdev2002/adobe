@@ -1,0 +1,22 @@
+{
+    "testId": "d82630c5-c7c7-4dc4-a2af-e91b3afcb9e8",
+    "name": "Attorneycare",
+    "version": "1.0.0",
+    "manifestVersion": 2,
+    "requirements": {
+        "apps": [
+            {
+                "name": "Express",
+                "apiVersion": 1
+            }
+        ]
+    },
+    "entryPoints": [
+        {
+            "type": "panel",
+            "id": "panel1",
+            "main": "index.html",
+            "documentSandbox": "sandbox/code.js"
+        }
+    ]
+}

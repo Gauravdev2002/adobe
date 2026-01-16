@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="AttorneyCare legal collaboration platform" />
+        <meta name="keywords" content="Legal, Collaboration, Audit, Document Review" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AttorneyCare</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+        <style>
+            :root {
+                --ac-bg: #1a1a1a;
+                --ac-surface: #262626;
+                --ac-border: #333333;
+                --ac-accent: #f1d56e;
+                --ac-accent-hover: #e0c35a;
+                --ac-text: #ffffff;
+                --ac-text-secondary: #a1a1aa;
+                --ac-text-muted: #6b7280;
+                --ac-success: #22c55e;
+                --ac-warning: #facc15;
+                --ac-danger: #ef4444;
+                --ac-info: #38bdf8;
+                --ac-disabled: #4b5563;
+            }
+
+            .bg-app {
+                background-color: var(--ac-bg);
+            }
+            .bg-surface {
+                background-color: var(--ac-surface);
+            }
+            .border-app {
+                border-color: var(--ac-border);
+            }
+            .text-primary {
+                color: var(--ac-text);
+            }
+            .text-secondary {
+                color: var(--ac-text-secondary);
+            }
+            .text-muted {
+                color: var(--ac-text-muted);
+            }
+            .btn-primary {
+                background-color: var(--ac-accent);
+                color: #1a1a1a;
+            }
+            .btn-primary:hover {
+                background-color: var(--ac-accent-hover);
+            }
+            .btn-outline {
+                border-color: var(--ac-border);
+                color: var(--ac-text);
+            }
+            .btn-outline:hover {
+                background-color: var(--ac-border);
+            }
+            .input-field {
+                background-color: var(--ac-bg);
+                border-color: var(--ac-border);
+                color: var(--ac-text);
+            }
+            .input-field::placeholder {
+                color: var(--ac-text-muted);
+            }
+            .input-field:focus {
+                outline: 2px solid var(--ac-accent);
+                outline-offset: 1px;
+            }
+            .btn-primary:focus-visible,
+            .btn-outline:focus-visible {
+                outline: 2px solid var(--ac-accent);
+                outline-offset: 2px;
+            }
+            .responsive-table {
+                min-width: 520px;
+            }
+            .status-agreed {
+                background-color: color-mix(in srgb, var(--ac-success) 20%, transparent);
+                color: var(--ac-success);
+            }
+            .status-pending {
+                background-color: color-mix(in srgb, var(--ac-warning) 20%, transparent);
+                color: var(--ac-warning);
+            }
+            .status-disputed {
+                background-color: color-mix(in srgb, var(--ac-danger) 20%, transparent);
+                color: var(--ac-danger);
+            }
+            .status-info {
+                background-color: color-mix(in srgb, var(--ac-info) 20%, transparent);
+                color: var(--ac-info);
+            }
+            .status-disabled {
+                background-color: color-mix(in srgb, var(--ac-disabled) 20%, transparent);
+                color: var(--ac-disabled);
+            }
+        </style>
+    </head>
+    <body class="bg-app text-primary antialiased">
+        <div id="root"></div>
+        <script type="module" src="ui/index.js"></script>
+    </body>
+</html>
